@@ -6,3 +6,10 @@ Based on [ThePrimagen's nvim config](https://github.com/ThePrimeagen/init.lua) a
 
 ### Prerequisites
 Prerequisite: install [ripgrep](https://github.com/BurntSushi/ripgrep).
+
+Also, you'll need to install [Packer](https://github.com/wbthomason/packer.nvim):
+
+```shell
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
