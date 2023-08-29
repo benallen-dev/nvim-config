@@ -19,16 +19,6 @@ return require('packer').startup(function(use)
 		end
 	})
 
---[[
-	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
-		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
-	})
-]]--
-
 	use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
 	use('theprimeagen/harpoon')
@@ -59,11 +49,23 @@ return require('packer').startup(function(use)
 	use('nvim-tree/nvim-tree.lua')
 	use('nvim-tree/nvim-web-devicons')
 
+	-- Inline colour previews
 	use('NvChad/nvim-colorizer.lua')
 
+	-- Status line
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
+
+	-- Prettier
+	use {
+		'MunifTanjim/prettier.nvim',
+		requires = {
+			{'neovim/nvim-lspconfig'},
+			{'jose-elias-alvarez/null-ls.nvim'}
+		}
+	}
+
 end)
 
