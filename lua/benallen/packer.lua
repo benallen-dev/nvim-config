@@ -60,5 +60,10 @@ return require('packer').startup(function(use)
 	use('nvim-tree/nvim-web-devicons')
 
 	use('NvChad/nvim-colorizer.lua')
+
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 end)
 
