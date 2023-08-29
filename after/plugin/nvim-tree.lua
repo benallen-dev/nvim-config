@@ -72,4 +72,4 @@ require("nvim-tree").setup({
 })
 
 vim.keymap.set("n", "<C-b>", vim.cmd.NvimTreeToggle)
-
+vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeFocus)
