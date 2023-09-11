@@ -28,6 +28,7 @@ lsp.on_attach(function(_, bufnr)
 	vim.keymap.set("n", "<leader>lf", function()
 		vim.lsp.buf.format({ async = false, timeout_ms = 10000 })
 	end, opts)
+	vim.keymap.set("n", "<leader>e", function() vim.diagnostic.open_float(0, {scope="line"}) end, opts)
 end)
 
 lsp.setup()
