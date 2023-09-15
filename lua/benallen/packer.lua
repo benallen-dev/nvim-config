@@ -69,4 +69,7 @@ return require('packer').startup(function(use)
 
 	-- Github Copilot
 	use('github/copilot.vim')
+
+	-- Discord rich presence
+	use('andweeb/presence.nvim')
 end)
