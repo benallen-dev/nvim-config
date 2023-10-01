@@ -70,7 +70,7 @@ require("nvim-tree").setup({
 		dotfiles = false,
 		git_ignored = false,
 		custom = {
-			"^\\.git",
+			"^\\.git$",
 			"^node_modules$",
 		}
 	},
