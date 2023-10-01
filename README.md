@@ -1,4 +1,10 @@
-# nvim-config
+# This repository is no longer updated!
+
+### See [.dotfiles](https://github.com/benallen-dev/dotfiles) for the latest config.
+
+Yeah, it turns out that submodules sound great, but if you *own* both repositories it just means extra steps. 
+
+## Original README continues
 
 If I'm going to Vim, I'm going to do it right and customise that bad boy!
 
